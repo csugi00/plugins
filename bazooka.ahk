@@ -13,11 +13,11 @@ RayOfFrost(x)
 {
 	if (x == "U") 
 	{
-		SendInput {4 Up}
+		SendInput {2 Up}
 	}
 	else if (x == "D")
 	{
-		SendInput {4 Down}
+		SendInput {2 Down}
 	}
 }
 
@@ -37,11 +37,11 @@ Electrocute(x)
 {
 	if (x == "U") 
 	{
-		SendInput {2 Up}
+		SendInput {4 Up}
 	}
 	else if (x == "D")
 	{
-		SendInput {2 Down}
+		SendInput {4 Down}
 	}
 }
 
@@ -144,6 +144,11 @@ $5::
 		}
 		else
 		{
+			Send {Enter}
+			Sleep 50
+			Send /p SpeedMacro Stopped
+			Sleep 50
+			Send {Enter}
 			break
 		}
 	}
@@ -159,6 +164,11 @@ $8::
 		}
 		else
 		{
+			Send {Enter}
+			Sleep 50
+			Send /p PushMacro Stopped
+			Sleep 50
+			Send {Enter}
 			break
 		}
 	}
