@@ -18,7 +18,7 @@ namespace Turbo.Plugins.deianu
             WormHoleDecorator = new WorldDecoratorCollection(
                 new GroundCircleDecorator(Hud)
                 {
-                    Brush = Hud.Render.CreateBrush(128, 255, 0, 0, 6),
+                    Brush = Hud.Render.CreateBrush(200, 255, 0, 0, 5),
                     Radius = 5f,
                 }
             );
